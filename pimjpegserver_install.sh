@@ -26,6 +26,17 @@ cd Pi-MJPEG-Server
 
 # (Optional) Update mjpeg_server.py if needed
 # You can add code here to automatically modify mjpeg_server.py if necessary
+# (Optional) Update mjpeg_server.py if needed
+echo "Do you want to edit mjpeg_server.py? (yes/no)"
+read user_input
+
+if [ "$user_input" = "yes" ]; then
+    echo "Opening mjpeg_server.py with sudo nano..."
+    sudo nano mjpeg_server.py
+    echo "Continuing with the rest of the setup..."
+else
+    echo "If you want to edit mjpeg_server.py in the future, you can open it with 'sudo nano /usr/local/bin/mjpeg_server.py'"
+fi
 
 # Move Python script to a safe location
 echo "Moving Python script to /usr/local/bin..."
