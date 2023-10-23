@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Copy the file sudo chmod +x pimjpegserver_install.sh
 # Update the Raspberry Pi OS and packages
 echo "Updating Raspberry Pi OS and packages..."
 sudo apt update
